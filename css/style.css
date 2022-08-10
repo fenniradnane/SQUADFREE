@@ -389,15 +389,14 @@ padding: 0 10px;
 }
 
 
-
 /*---------------------------------------------------------- 
                            Testimonials
 ------------------------------------------------------------*/
-/*.testi {
+#testi {
   background-color: #ecf5f98a;
   padding: 40px 80px;
 }
-.testi>h3{
+#testi>h3{
   background-image: url(../img/section-title-bg.png) ;
   background-repeat: no-repeat;
   text-decoration: solid;
@@ -406,23 +405,26 @@ padding: 0 10px;
   text-align: center;
   margin: 0;
 }
-.testi>p{
-  text-align: center;
-  font-size: 1.4em;
-}
-.testi > div {
+
+#testi > div {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   justify-content: space-evenly;
 }
-
-.face>h4::after{
-  content: " ";
-  border: solid black;
-  display: block;
-  margin: auto;
+#testi>p{
+  text-align: center;
+  font-family: open-sans;
+  font-size: 1em;
+  margin: 0 20px 20px 20px;
+  color:#2e4d5d;
 }
-.testi div .face img {
+
+#testi i{
+  color: #d5e9f2;
+  vertical-align: top;
+}
+
+#testi div .face img {
   width: 110px;
   border-radius: 50%;
   display: block;
@@ -430,21 +432,30 @@ padding: 0 10px;
   margin-top: 30px;
 }
 
-.face>#first{
-background-color: red;
-text-transform: capitalize;
-font-size: 1.3em;
-width: 40px;
+.face1>h3,.face{
+  text-align: center;
 }
-
-
-
-
-
 
 /*---------------------------------------------------------- 
                            test animation
 ------------------------------------------------------------*/
+
+@keyframes move-to-top {
+  from {
+    top: 100px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+
+/*---------------------------------------------------------- 
+                           TEAMMMMMMMMMMMMM
+------------------------------------------------------------*/
+
 #tea>h3{
   background-image: url(../img/section-title-bg.png) ;
   background-repeat: no-repeat;
@@ -489,25 +500,10 @@ width: 40px;
       display: block;
       text-align: center;
        }
-  
+    
+     
       
-      #team1 {
-        animation: move-to-top 0.5s ease-in;
-      }
-      
-      #team2 {
-        animation: move-to-top 1s ease-in;
-      }
-      
-      #team3 {
-        animation: move-to-top 1.5s ease-in;
-      }
-      
-      #teams img {
-        width: 450px;
-      }
-      
-      .description {
+       .description {
         position: absolute;
         width: 80%;
         margin: auto;
@@ -533,17 +529,27 @@ width: 40px;
         width: 50%;
         margin: 10px auto;
       }
+      .team:hover .description {
+        max-height: 170px;
+      }
       
       .social {
         font-size: 1.2em;
         margin-top: 10px;
       }
-      
-      .team:hover .description {
-        max-height: 150px;
+  
+      #team1 {
+        animation: move-to-top 0.35s ease-in;
       }
       
-
+      #team2 {
+        animation: move-to-top 0.85s ease-in;
+      }
+      
+      #team3 {
+        animation: move-to-top 1.25s ease-in;
+      }
+      
 
 /*---------------------------------------------------------- 
                            Contact
